@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>main page</title>
+	<link rel="stylesheet" type="text/css" href="first page.css">
+</head>
+<body bgcolor="#bee1e2">
+<header>
+	<table>
+		<tbody>
+		<tr bgcolor="white">
+			<td width="100%" class="icon"><img src=beuth.png class="icon1"></td>
+			<td class="noticon" onclick="showabout()" id="welcomes"></td>
+		</tr>
+	
+				
+		</tbody>
+	</table>
+	<table class="centerhim" border=0><tbody>
+		<tr>
+			<td colspan="3" class="welcome"><h2>Willkommen in meiner Welt<br>Bitte wählen Sie eines der folgenden Spiele, indem Sie auf das Spiel-Icon/Bild klicken</h2></td>
+		</tr>
+		<tr style="margin-left:auto">
+			<td style="padding-right:50px"><a href="first game.html"><img class="iconicon" src="black jack icon.png"></a></td>
+			<td style="padding-right:50px"><a href="second game.html"><img class="iconicon" src="icon.png"></a></td>
+			<td><a href="third game.html"><img class="iconicon" src="memory.png"></a></td>
+		</tr>
+		<tr class="texts">
+			<td><b>blackjack/21</b></td>
+			<td><b>memory cards</b></td>
+			<td><b>memory squares</b> </td>
+		</tr>
+		</tbody>
+	</table>
+</header>
+<footer>
+  <p align="center"><font color="black"><a href="arwa sdiri.html">über den Entwickler </a></font></p><hr>
+  <p align="center"><font color="black"><a href="main html.html">abmelden</a></font></p>
+</footer>
+<script type="text/javascript">
+	a=(localStorage.getItem("storageName"))
+	document.getElementById('welcomes').innerHTML="Herzlich Willkommen "+a
+</script>
+</body>
+</html>

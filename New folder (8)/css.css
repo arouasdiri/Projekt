@@ -1,0 +1,29 @@
+#square{
+	height: 400px;
+	width: 400px;
+	border:crimson thick double;
+	margin: auto;
+}
+.cell{
+	background-color: crimson;
+  
+}
+.cell:hover {
+  background-color:darkblue;
+}
+.bg {
+  background-image: url("23138.jpg");
+
+  height: 100%;
+
+  position: float;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+button {
+  width: 100px;
+  height: 50px;
+  font-size: 25px;
+}
+

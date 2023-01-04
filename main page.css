@@ -1,0 +1,52 @@
+body{
+	background-color: crimson ;
+}
+header {
+	background-color:	#CD5C5C	;
+	margin: auto;
+
+}
+
+.noticon{
+	font-size: 20px;
+	font-family: Comic Sans MS;
+}
+.icon1{
+	width: 250px;
+	height: 100px;
+}
+.rest{
+	margin: auto;
+	width : 100%;
+	text-align: center; 
+}
+iframe{
+	margin-top: 50px;
+}
+#about_the_website {
+	font-family: Comic Sans MS;
+	font-size: 30px;
+	margin: 80px;
+	margin-top: 0px;
+}
+p{
+	background-color: white;
+	height: 20px;
+	width: 300px;
+
+}
+
+      .bg {
+  /* The image used */
+  background-image: url("background.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  position: float;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+

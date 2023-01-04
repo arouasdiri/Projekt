@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple registration form</title>
+
+<link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body class=bg>
+    <div class="main-block">
+      <h1>Anmeldung </h1>
+      <form action="main page.html" onsubmit="return test();">
+        <hr>
+        <label id="icon" for="name"><i class="fas fa-user"></i></label>
+        <input type="text" name="name" id="name" placeholder="Vorname" required/>
+        <hr>
+        <div class="gender">
+          <input type="radio" value="none" id="male" name="gender" checked/>
+          <label for="male" class="radio">männlich </label>
+          <input type="radio" value="none" id="female" name="gender" /><!--The HTML <Radio> button is used to define the small circle-->
+          <label for="female" class="radio">weiblich</label>
+
+        </div>
+        <hr>
+        <img src=captcha.png height="50" widht=100 id="image"><br>
+        <label id="icon" for="name"><i class="fas fa-user"></i></label>
+        <input type="text" name="name" id="captcha" placeholder="Geben Sie die Nummer ein" required/>
+        <div class="btn-block">
+
+          <button  id="button" > einreichen</button>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script type="text/javascript">
+    random=["captcha1.png","captcha2.png","captcha3.png"]
+    answers=["td4eva","263s2v","mwxe2"]
+    i=Math.floor(Math.random() * 3)
+    document.getElementById('image').src=random[i]
+    answer=answers[i]
+    function test(){
+      a=document.getElementById('captcha').value
+      if (a.toLowerCase()!=answer){
+            alert("the captcha was wrong");
+            return false;
+      }
+    localStorage.setItem("storageName",document.getElementById("name").value);
+  return true;
+    }
+
+  </script>
+</html>
